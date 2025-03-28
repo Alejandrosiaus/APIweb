@@ -1,3 +1,4 @@
-Usando Python
-Con flask api
-pensado para usar PgAdmin como base de datos
+-Usando Python
+-Con flask api
+-pensado para usar PgAdmin como base de datos
+-Enviado como un zip por que no me dejaba de otra manera
