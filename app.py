@@ -4,8 +4,8 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# Configuración de la base de datos
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:P101104e@localhost:5432/incidentes_db'
+# Configuracion de la base de datos
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:TU_CONTRASEÑA@localhost:5432/incidentes_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -64,7 +64,7 @@ def get_incidents():
     return jsonify(result)
 
 
-# Obtener un incidente específico por ID ✅ ESTE ES EL CRÍTICO
+# Obtener un incidente específico 
 @app.route('/incidents/<int:incident_id>', methods=['GET'])
 def get_incident(incident_id):
     incident = Incident.query.get(incident_id)
